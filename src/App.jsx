@@ -3,6 +3,7 @@ import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+
 import "./App.css";
 
 export default function App() {
