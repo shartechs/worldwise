@@ -6,6 +6,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Homepage from "./pages/Homepage";
 import Login from "./pages/Login";
 import CityList from "./components/CityList/CityList";
+import CountryList from "./components/CountryList/CountryList";
 
 import "./App.css";
 import AppLayout from "./pages/AppLayout";
@@ -50,7 +51,10 @@ export default function App() {
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="countries" element={<p>countries</p>} />
+          <Route
+            path="countries"
+            element={<CountryList cities={cities} isLoading={isLoading} />}
+          />
           <Route path="form" element={<p>Form</p>} />
         </Route>
         <Route path="/" element={<Homepage />} />
