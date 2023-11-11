@@ -1,3 +1,4 @@
+import { useParams, useSearchParams } from "react-router-dom";
 import BackButton from "../BackButton";
 import styles from "./City.module.css";
 
@@ -17,6 +18,12 @@ function City() {
     date: "2027-10-31T15:59:59.138Z",
     notes: "My favorite city so far!",
   };
+
+  const { id } = useParams();
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const lat = searchParams.get("lat");
+  const lng = searchParams.get("lng");
 
   const { cityName, emoji, date, notes } = currentCity;
 
