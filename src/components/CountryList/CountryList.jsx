@@ -2,8 +2,10 @@ import Spinner from "../Spinner";
 import Message from "../Message";
 import CountryItem from "./CountryItem";
 import styles from "./CountryList.module.css";
+import { useCities } from "../../contexts/CitiesContext";
 
-export default function CountryList({ cities, isLoading }) {
+export default function CountryList() {
+  const { cities, isLoading } = useCities();
   const countires = cities.reduce((arr, city) => {
     return arr.map((el) => el.country).includes(city.country)
       ? arr
