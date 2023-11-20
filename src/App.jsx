@@ -9,9 +9,8 @@ import CountryList from "./components/CountryList/CountryList";
 import City from "./components/City/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
-
+import AppLayout from "./pages/AppLayout/AppLayout";
 import "./App.css";
-import AppLayout from "./pages/AppLayout";
 
 export default function App() {
   return (
