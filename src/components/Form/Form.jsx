@@ -1,7 +1,7 @@
 // "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=0&longitude=0"
 
 import { useState } from "react";
-import Button from "./Button";
+import Button from "../Button/Button";
 
 import styles from "./Form.module.css";
 import { useNavigate } from "react-router-dom";

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import BackButton from "../BackButton";
+import BackButton from "../Button/BackButton";
 import styles from "./City.module.css";
 import { useCities } from "../../contexts/CitiesContext";
 import { useEffect } from "react";
