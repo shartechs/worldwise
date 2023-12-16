@@ -1,5 +1,5 @@
 import Spinner from "../Spinner";
-import Message from "../Message";
+import Message from "../Message/Message";
 import CountryItem from "./CountryItem";
 import styles from "./CountryList.module.css";
 import { useCities } from "../../contexts/CitiesContext";
